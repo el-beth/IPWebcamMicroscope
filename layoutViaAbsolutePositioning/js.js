@@ -17,7 +17,7 @@ var host="";
 var genericXHR = new XMLHttpRequest();
 var stat;
 
-submitElement.onclick = () => {
+function commitInput(){
 	if (inputElement.value.search(/(\d{1,3}\.){3}\d{1,3}/g) == 0){		
 		hostIP=inputElement.value;
 		host=hostIP+':8080';
@@ -31,13 +31,22 @@ submitElement.onclick = () => {
 				}else{
 					ledOn=true;
 				}
-				zoomLevel=Number(stat.curvals.zoom);
+				zoomLevel=stat.curvals.zoom;
 				$('#ipInput').remove();
 				$('#frameContainer').innerHTML = '<img id="frame" src="http://'+host+'/video" alt="http://'+host+'/video">';
 			}
 		};
 	};
+}
+submitElement.onclick = () => {
+	commitInput();
 };
+inputElement.addEventListener('keydown',(e)=>{
+	if (e.key == "Enter"){
+		console.info("Pressed 'Enter' inside inputElement")
+	   	commitInput();
+	};
+});
 
 focusButton.onclick = () => {
 	focusRequestXHR.open('GET', 'http://'+host+'/focus');
