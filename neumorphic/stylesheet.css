@@ -1,0 +1,74 @@
+* {
+	padding: 0px;
+	margin: 0px;
+}
+body {
+	background-color: #9acfdc;
+}
+#lCol {
+	position: relative;
+	left: 0px;
+	top: 0px;
+	width: 86px;
+	float: left;
+}
+#rCol {
+	position: relative;
+	right: 0px;
+	top: 0px;
+	width: 1280px;
+	float: right;
+}
+.neu {
+	transition: background .1s, box-shadow .1s;
+	background: linear-gradient(145deg, #a5ddeb, #8bbac6);
+	box-shadow:  15px 15px 30px #668991,
+	             -15px -15px 30px #ceffff;
+}
+button {
+	width: 60px;
+	height: 60px;
+	border-radius: 50px;
+	border-width: 0px;
+	margin: 20px 13px;
+	
+}
+.neu:hover {
+	background: linear-gradient(145deg, #a5ddeb, #8bbac6);
+	box-shadow:  15px 15px 30px #6f959e,
+	             -15px -15px 30px #c5ffff;
+}
+.neu:active {
+	background: linear-gradient(145deg, #a5ddeb, #8bbac6);
+	box-shadow:  5px 5px 10px #6f959e,
+	             -5px -5px 10px #c5ffff;
+}
+span {
+	font-size: 2em;
+	color: #335;
+}
+input {
+	position: relative;
+	top: 4px;
+	margin-top: 80px;
+	font-size: 2em;
+	width: 60%;
+	height: 30px;
+	padding: 20px;
+	border: none;
+	border-radius: 50px;
+	color: darkgray;
+}
+input:focus-visible {
+	outline: none; !important
+}
+#submit {
+	position: relative;
+	left: 20px;
+}
+#ipInput > input:focus {
+	color: black;
+	background: #9acfdc;
+	box-shadow: inset 5px 5px 10px #6f959e,
+	            inset -5px -5px 10px #c5ffff;
+}
