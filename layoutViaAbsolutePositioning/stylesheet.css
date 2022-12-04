@@ -1,0 +1,44 @@
+* {
+	padding: 0px;
+	margin: 0px;
+}
+#lCol {
+	position: relative;
+	left: 0px;
+	top: 0px;
+	width: 86px;
+	float: left;
+}
+#rCol {
+	position: relative;
+	right: 0px;
+	top: 0px;
+	width: 1280px;
+	float: right;
+}
+button {
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	border-width: 0px;
+	margin: 5px 13px;
+}
+span {
+	font-size: 2em;
+}
+input {
+	position: relative;
+	top: 4px;
+	margin-top: 80px;
+	font-size: 2em;
+	width: 60%;
+	height: 30px;
+	padding: 20px;
+	border-radius: 20px;
+	border: solid lightgray 1px;
+	color: #a00;
+}
+#submit {
+	position: relative;
+
+}
